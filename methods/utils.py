@@ -2,26 +2,18 @@ import pandas as pd
 from sklearn.metrics import roc_auc_score, accuracy_score, f1_score
 
 
-ORDER = ['TEST_SET',
- 'RT-mod',
- 'ATC',
- 'DOC',
- 'CBPE',
- 'IW',
- 'PAPE',
- ] # order for tables
 
-CB_color_cycle = ['#377eb8', '#ff7f00', '#4daf4a',
-                  '#f781bf', '#a65628', '#984ea3',
-                  '#999999', '#e41a1c', '#dede00'] # colors from color-blind cycle
+CB_color_cycle = ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D53300", "#CC79A7"]  # colors from color-blind cycle
+
 
 colors = {
-    'PAPE':CB_color_cycle[7],
-    'CBPE':CB_color_cycle[5],
-    'IW':CB_color_cycle[0],
+    'PAPE':CB_color_cycle[5],
+    'CBPE':CB_color_cycle[6],
+    'IW':CB_color_cycle[4],
     'ATC':CB_color_cycle[1],
     'DOC':CB_color_cycle[2],
-    'TEST_SET':CB_color_cycle[4],
+    'COT':CB_color_cycle[0],
+    'TEST_SET':'brown',
     "RT-mod":CB_color_cycle[3]
 }
 
